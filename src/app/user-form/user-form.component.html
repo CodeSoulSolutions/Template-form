@@ -1,0 +1,14 @@
+<form #formRef="ngForm" (ngSubmit)="onSubmit(formRef)">
+    <label>
+      Name:
+      <input type="text" name="name" [(ngModel)]="user.name" required />
+    </label>
+    <br />
+    <label>
+      Email:
+      <input type="email" name="email" [(ngModel)]="user.email" required email />
+    </label>
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+  
